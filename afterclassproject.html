@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After class project</title>
+</head>
+<body>
+    <h2>List of random numbers</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <h2>Current dates</h2>
+    <p id="p4"></p>
+    <h2>Rounded random numbers</h2>
+    <p id="p5"></p>
+    <p id="p6"></p>
+    <p id="p7"></p>
+    <p id="p8"></p>
+    <script>
+      document.getElementById("p1").innerHTML = Math.random();
+      document.getElementById("p2").innerHTML=Math.random();
+      document.getElementById("p3").innerHTML = Math.random();
+     var date="";
+     switch(new Date().getDay()){
+        case 0:
+             date="19 Saturday";
+             break;
+        case 1:
+             date = "20 Sunday";
+             break;
+        case 2:
+             date = "21 Monday";
+             break;
+        case 3:
+             date = "22 Tuesday";
+             break;
+        case 4:
+             date = "23 Wednesday";
+             break;
+        case 5:
+             date = "24 Thursday";
+             break;
+        case 6:
+             date = "25 Friday";
+             break;
+        case 7:
+             date = "26 Saturday";
+             break;
+     }
+     document.getElementById("p4").innerHTML=date;
+     document.getElementById("p5").innerHTML = Math.floor(Math.random()*100)
+     document.getElementById("p6").innerHTML = Math.floor(Math.random() * 100)
+     document.getElementById("p7").innerHTML = Math.floor(Math.random() * 100)
+     document.getElementById("p8").innerHTML = Math.floor(Math.random() * 100)
+    </script>
+</body>
+</html>
